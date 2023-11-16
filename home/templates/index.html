@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+<div class="container" style="padding-top: 10px;">
+    <br>
+    <a href=""><button class="btn btn-danger" style="width:100%;">Object Qo'shish</button></a>
+    <div style="width: 100%; height: 20px"></div>
+     {% if auto %}
+     <table class="table  table-bordered border-primary bg-dark text-light">
+      <tbody>
+      <tr>
+         <td class="text-center">Nomi</td>
+         <td class="text-center">Rangi</td>
+         <td class="text-center">Narxi</td>
+         <td class="text-center">O'zgartirish</td>
+         <td class="text-center">O'chirish</td>
+        </tr>
+      {% for item in auto %}
+        <tr>
+         <td class="text-center">{{ item.nomi }}</td>
+         <td class="text-center">{{ item.rangi }}</td>
+         <td class="text-center">{{ item.narxi }}</td>
+         <td class="text-center"><a href=""><button class="btn btn-success">O'zgartirish</button></a></td>
+         <td class="text-center"><a href=""><button class="btn btn-danger">O'chirish</button></a></td>
+        </tr>
+      {% endfor %}
+         </tbody>
+    </table>
+     {% else %}
+    <table class="table  table-bordered border-primary bg-dark text-light">
+      <tbody>
+        <tr>
+          <td class="text-center">Xech qanday m'alumot yo'q</td>
+         </tr>
+      </tbody>
+    </table>
+    {% endif %}
+</div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    -->
+  </body>
+</html>
